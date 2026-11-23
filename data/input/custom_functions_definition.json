@@ -1,0 +1,44 @@
+[
+  {
+    "name": "fn_rotate_vector2d",
+    "description": "Rotate a 2D vector as a JSON object with x and y parameters.",
+    "parameters": {
+      "vector": {
+        "type": "object"
+      },
+      "angle": {
+        "type": "number"
+      }
+    },
+    "returns": {
+      "type": "object"
+    }
+  },
+  {
+    "name": "fn_rotate_vector3d",
+    "description": "Rotate a 3D vector as a JSON object with x, y and z parameters.",
+    "parameters": {
+      "vector": {
+        "type": "object"
+      },
+      "angle": {
+        "type": "number"
+      }
+    },
+    "returns": {
+      "type": "object"
+    }
+  },
+  {
+    "name": "fn_sum",
+    "description": "Add up all numbers in the list together and return the result.",
+    "parameters": {
+      "list": {
+        "type": "array"
+      }
+    },
+    "returns": {
+      "type": "number"
+    }
+  }
+]
