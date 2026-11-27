@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from typing import Any, cast
 
-from llm_sdk.llm_sdk import Small_LLM_Model
+from llm_sdk import Small_LLM_Model
 
 from .expect import Expect, ExpectFunction, ExpectValue
 from .formatting import X, H, U, C, D
@@ -69,7 +69,7 @@ class LLMInterface:
             state: Expect,
             tokens: list[int],
             autocomplete: bool = False
-            ) -> bool:
+            ) -> Any:
         """Utility function for adding tokens to output.
 
         Parameters
@@ -179,7 +179,7 @@ class LLMInterface:
             prompt: str,
             timeout: float = 30.0,
             examine: bool = False
-            ) -> str:
+            ) -> Any:
         """Generate a string representing a function call, based on a prompt.
 
         Parameters

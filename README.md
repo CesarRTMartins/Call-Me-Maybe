@@ -10,6 +10,7 @@ This is where **constrained decoding** comes into play.
 ## Instructions
 Run the project using `make run` in the root of the repository.
 Output is generated in `data/output/function_calls.json`.
+The Makefile uses Python 3.14 for the current Torch/Triton stack.
 
 To customize the input, you can create your own function definitions and tests
 and provide the paths to them when running using `uv run -m src ...`.
